@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="./app.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <div class="game-container">
+    <h1>Tic-Tac-Toe (Morpion)</h1>
+    
+    <div class="game-mode">
+      <button id="vs-computer" class="active">VS Ordinateur</button>
+      <button id="vs-player">2 Joueurs</button>
+    </div>
+
+    <div class="difficulty-selector">
+      <button class="difficulty-btn active" data-level="easy">Facile</button>
+      <button class="difficulty-btn" data-level="medium">Moyen</button>
+      <button class="difficulty-btn" data-level="hard">Difficile</button>
+    </div>
+
+    <div class="score-board">
+      <div class="score player-score">
+        <span class="label">Joueur X</span>
+        <span class="value">0</span>
+      </div>
+      <div class="score draws">
+        <span class="label">Nuls</span>
+        <span class="value">0</span>
+      </div>
+      <div class="score computer-score">
+        <span class="label">Ordinateur</span>
+        <span class="value">0</span>
+      </div>
+    </div>
+
+    <div id="board"></div>
+    <div id="status"></div>
+    
+    <div class="buttons">
+      <button id="reset">Nouvelle Partie</button>
+      <button id="reset-scores">Réinitialiser Scores</button>
+    </div>
+  </div>
+
+  <audio id="click-sound" src="click.mp3"></audio>
+  <audio id="computer-sound" src="computer.mp3"></audio>
+  <audio id="win-sound" src="win.mp3"></audio>
+  <audio id="lose-sound" src="lose.mp3"></audio>
+  <audio id="draw-sound" src="draw.mp3"></audio>
+</body>
+</html>
